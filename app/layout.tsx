@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +25,37 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Script id="show-banner">
+          {`
+            function loadWidget() {
+              const script = document.createElement("script");
+              script.src = "https://app.usevetsync.com/widget.js";
+              script.async = true;
+              script.onload = function () {
+                console.log("Widget script loaded");
+                if (window.PetBooking && typeof window.PetBooking.initializeWidget === "function") {
+                  window.PetBooking.initializeWidget({
+                    clinicId: "1ef18144-f68e-49db-9106-2342fc0dd752",
+                  });
+                } else {
+                  console.error("Widget initialization failed");
+                }
+              };
+              script.onerror = function () {
+                console.error("Failed to load widget script");
+              };
+              document.body.appendChild(script);
+            }
+
+            // Load the widget when the page is ready
+            if (document.readyState === "loading") {
+              document.addEventListener("DOMContentLoaded", loadWidget);
+            } else {
+              loadWidget();
+            }
+          `}
+        </Script>
         {children}
       </body>
     </html>
