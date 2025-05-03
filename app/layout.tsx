@@ -30,7 +30,7 @@ export default function RootLayout({
           {`
             function loadWidget() {
               const script = document.createElement("script");
-              script.src = "https:/app.usevetsync.com/widget.js";
+              script.src = "https://app.usevetsync.com/widget.js";
               script.async = true;
               script.onload = function () {
                 console.log("Widget script loaded");
