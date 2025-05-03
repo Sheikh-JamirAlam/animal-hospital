@@ -36,7 +36,6 @@ export default function Navbar() {
           </div>
           <Link href="https://app.usevetsync.com/book/86d73c9f-20e4-4672-8933-4f32bcbdb18c">
             <Button className="bg-primary hover:bg-primary/90 text-white">
-              <Phone className="mr-2 h-4 w-4" />
               Schedule Appointment
             </Button>
           </Link>

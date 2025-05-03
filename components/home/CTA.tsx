@@ -14,7 +14,6 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="https://app.usevetsync.com/book/86d73c9f-20e4-4672-8933-4f32bcbdb18c">
               <Button size="lg" className="bg-white text-primary hover:bg-gray-200">
-                <Phone className="mr-2 h-4 w-4" />
                 Book Now
               </Button>
             </Link>
