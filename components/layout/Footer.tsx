@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Footer() {
@@ -8,9 +9,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 flex items-center">
-              <span className="text-2xl mr-2">🐾</span> VetSync
-            </h3>
+            <div className="text-xl font-bold flex items-center gap-2">
+              <Image src={"/VetSync_blue-and-black.png"} alt="Logo" width={100} height={100} className="w-10 mb-2" />
+              <span>VetSync Animal Hospital</span>
+            </div>
             <p className="text-gray-300 mb-4">
               Providing exceptional veterinary care for your beloved pets. Our experienced team is dedicated to the health and happiness of your furry family members.
             </p>

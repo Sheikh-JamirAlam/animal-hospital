@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 
@@ -19,9 +20,11 @@ export default function Hero() {
                 <Phone className="mr-2 h-4 w-4" />
                 Contact Us
               </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                Our Services
-              </Button>
+              <Link href="https://app.usevetsync.com/book/86d73c9f-20e4-4672-8933-4f32bcbdb18c">
+                <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+                  Book Now
+                </Button>
+              </Link>
             </div>
 
             <div className="mt-10 grid grid-cols-3 gap-4 animate-fade-in" style={{ animationDelay: "0.3s" }}>
@@ -43,11 +46,11 @@ export default function Hero() {
           <div className="md:w-1/2 relative">
             <div className="rounded-lg overflow-hidden shadow-xl relative z-10">
               <Image
-                src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?auto=format&fit=crop&w=800&q=80"
+                src="/vet.jpg"
                 alt="Veterinarian with cat"
                 width={1000}
                 height={1000}
-                className="w-full h-auto"
+                className="w-full h-auto aspect-[5/4] object-left object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-primary/10 rounded-full -z-0"></div>

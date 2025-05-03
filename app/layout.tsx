@@ -36,7 +36,7 @@ export default function RootLayout({
                 console.log("Widget script loaded");
                 if (window.PetBooking && typeof window.PetBooking.initializeWidget === "function") {
                   window.PetBooking.initializeWidget({
-                    clinicId: "1ef18144-f68e-49db-9106-2342fc0dd752",
+                    clinicId: "86d73c9f-20e4-4672-8933-4f32bcbdb18c",
                   });
                 } else {
                   console.error("Widget initialization failed");

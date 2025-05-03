@@ -4,25 +4,25 @@ import { Card, CardContent } from "@/components/ui/card";
 const teamMembers = [
   {
     name: "Dr. Emma Wilson",
-    role: "Chief Veterinarian",
+    role: "Owner / Medical Director",
     image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&h=500&q=80",
     bio: "Dr. Wilson has over 15 years of experience in veterinary medicine with a special interest in feline medicine and surgery.",
   },
   {
     name: "Dr. Michael Chen",
-    role: "Surgical Specialist",
+    role: "Associate Veterinarian",
     image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&h=500&q=80",
     bio: "Dr. Chen specializes in orthopedic and soft tissue surgeries, ensuring your pets receive the best surgical care possible.",
   },
   {
     name: "Dr. Sarah Johnson",
-    role: "Emergency Care Veterinarian",
+    role: "Head Technician",
     image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=400&h=500&q=80",
     bio: "With expertise in critical care and emergency medicine, Dr. Johnson leads our 24/7 emergency services team.",
   },
   {
     name: "Lisa Martinez",
-    role: "Head Veterinary Technician",
+    role: "Practice Manager",
     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=500&q=80",
     bio: "Lisa has been with us for 8 years and is dedicated to ensuring every pet receives compassionate and thorough care.",
   },

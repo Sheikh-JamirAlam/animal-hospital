@@ -145,3 +145,8 @@
 .read-the-docs {
   color: #888;
 }
+
+#pet-booking-widget {
+  z-index: 999;
+  position: fixed;
+}
